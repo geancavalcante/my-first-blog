@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("olá,mundo")
+def post_list(request):
+    return render(request, 'blog/post_list.html',{})
 
 def eae (request):
     return HttpResponse('eaeeee')
